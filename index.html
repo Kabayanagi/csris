@@ -139,7 +139,8 @@ const spacer = document.getElementById("spacer");
 const maxHeight = window.innerHeight;
 window.addEventListener("scroll", () => {
   const scrollTop = window.scrollY || document.documentElement.scrollTop;
-  const newHeight = Math.max(maxHeight - scrollTop, 0); // 最小0
+  // スクロール量を2倍にして縮める
+  const newHeight = Math.max(maxHeight - scrollTop * 2, 0);
   spacer.style.height = newHeight + "px";
 });
 </script>
