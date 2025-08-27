@@ -137,19 +137,9 @@ fill:#40a0ff;
 <script>
 const spacer = document.getElementById("spacer");
 const maxHeight = window.innerHeight;
-
-function shrinkDiv() {
+window.addEventListener("scroll", () => {
   const scrollTop = window.scrollY || document.documentElement.scrollTop;
-  const newHeight = Math.max(maxHeight - scrollTop, 0);
+  const newHeight = Math.max(maxHeight - scrollTop, 0); // 最小0
   spacer.style.height = newHeight + "px";
-
-  // 高さが0になったらイベントを解除
-  if (newHeight === 0) {
-    window.removeEventListener("scroll", shrinkDiv);
-  }
-}
-
-// イベント登録
-window.addEventListener("scroll", shrinkDiv);
-
+});
 </script>
