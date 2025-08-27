@@ -140,7 +140,11 @@ const maxHeight = window.innerHeight;
 window.addEventListener("scroll", () => {
   const scrollTop = window.scrollY || document.documentElement.scrollTop;
   // スクロール量を2倍にして縮める
-  const newHeight = Math.max(maxHeight - scrollTop * 2, 0);
+  const newHeight = Math.max(maxHeight - scrollTop * 3, 0);
   spacer.style.height = newHeight + "px";
+  // まだ縮んでいる間は通常スクロールを止める
+  if (newHeight > 0) {
+    window.scrollTo(0, 0); // 強制的にスクロール位置を0に固定
+  }
 });
 </script>
