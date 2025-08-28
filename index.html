@@ -8,7 +8,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200..900&display=swap');
 *{font-family:Noto Sans Display, Noto Sans JP; font-size:15px;}
 body{animation:haikei 1s 2.5s linear forwards;}
-  .path1{stroke-width:0.01;}
+.path1{animation:just1 1s linear forwards; stroke-dashoffset:4.9; stroke-width:0.01; stroke-dasharray:4.9;}
+.path2{animation:just2 1s linear forwards; stroke-dashoffset:3.5; stroke-width:0.01; stroke-dasharray:3.5;}
+.path3{animation:just3 1s linear forwards; stroke-dashoffset:2.9; stroke-width:0.01; stroke-dasharray:2.9;}
+.pathA{animation:justA 1s 1s linear forwards; fill:none;}
+.pathB{animation:justB 1s 1s linear forwards; fill:none;}
+.pathC{animation:justC 1s 1s linear forwards; fill:none;}
+.pathD{animation:justD 1s 1s linear forwards; fill:none;}
 .patha{animation:just1 1s linear forwards, justA 1s 1s linear forwards;}
 .pathb{animation:just2 1s linear forwards, justA 1s 1s linear forwards;}
 .pathc{animation:just3 1s linear forwards, justA 1s 1s linear forwards;}
@@ -106,16 +112,16 @@ background:#404040;
 </header>
   <div style="position:fixed; width:90vw; top:0%; left:50%; transform:translateX(-50%);">
 <svg viewBox="0, 0, 9, 5" xmlns="http://www.w3.org/2000/svg">
-<path stroke-linecap="round" class="path1 patha" d="M2 2 A1 1 0 0 0 2 4 Z" fill="#205080"></path>
-<path stroke-linecap="round" class="path1 pathb" d="M2 2 A1 1 0 0 0 3 3 L3 2 Z" fill="#205080"></path>
-<path stroke-linecap="round" class="path1 pathb" d="M2 3 A1 1 0 0 0 3 4 L3 3 Z" fill="#205080"></path>
-<path stroke-linecap="round" class="path1 pathc" d="M2 2 A1 1 0 0 0 3 1 A1 1 0 0 0 2 2" fill="#205080"></path>
-<path stroke-linecap="round" class="path1 pathd" d="M4 2 A1 1 0 0 0 4 4 Z" fill="#40a0ff"></path>
-<path stroke-linecap="round" class="path1 pathe" d="M5 2 A1 1 0 0 0 4 3 L5 3 Z" fill="#40a0ff"></path>
-<path stroke-linecap="round" class="path1 pathf" d="M6 2 A1 1 0 0 0 6 4 Z" fill="#40a0ff"></path>
-<path stroke-linecap="round" class="path1 pathg" d="M6 2 A1 1 0 0 0 5 1 A1 1 0 0 0 6 2" fill="#40a0ff"></path>
-<path stroke-linecap="round" class="path1 pathh" d="M6 2 A1 1 0 0 0 8 2 Z" fill="#40a0ff"></path>
-<path stroke-linecap="round" class="path1 pathh" d="M6 4 A1 1 0 0 1 8 4 Z" fill="#40a0ff"></path>
+<path stroke-linecap="round" class="path1 pathA patha" d="M2 2 A1 1 0 0 0 2 4 Z" fill="#ffc080"></path>
+<path stroke-linecap="round" class="path2 pathA pathb" d="M2 2 A1 1 0 0 0 3 3 L3 2 Z" fill="#ffc080"></path>
+<path stroke-linecap="round" class="path2 pathA pathb" d="M2 3 A1 1 0 0 0 3 4 L3 3 Z" fill="#ffc080"></path>
+<path stroke-linecap="round" class="path3 pathA pathc" d="M2 2 A1 1 0 0 0 3 1 A1 1 0 0 0 2 2" fill="#ffc080"></path>
+<path stroke-linecap="round" class="path1 pathB pathd" d="M4 2 A1 1 0 0 0 4 4 Z" fill="#ff80c0"></path>
+<path stroke-linecap="round" class="path2 pathB pathe" d="M5 2 A1 1 0 0 0 4 3 L5 3 Z" fill="#ff80c0"></path>
+<path stroke-linecap="round" class="path1 pathC pathf" d="M6 2 A1 1 0 0 0 6 4 Z" fill="#80f080"></path>
+<path stroke-linecap="round" class="path3 pathC pathg" d="M6 2 A1 1 0 0 0 5 1 A1 1 0 0 0 6 2" fill="#80f080"></path>
+<path stroke-linecap="round" class="path1 pathD pathh" d="M6 2 A1 1 0 0 0 8 2 Z" fill="#80c0ff"></path>
+<path stroke-linecap="round" class="path1 pathD pathh" d="M6 4 A1 1 0 0 1 8 4 Z" fill="#80c0ff"></path>
 </svg></div>
 <main>
 </body>
