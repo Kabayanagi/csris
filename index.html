@@ -108,12 +108,22 @@ fill:rgba(255,255,255,0);
 fill:#40a0ff;
 }
 }
+  @keyframes logo {
+0% {
+top:50%;
+  transform:translateX(-50%) translateY(-50%);
+}
+100% {
+top:0%;
+  transform:translateX(-50%) translateY(0%);
+}
+}
 </style>
   </head>
 <body>
 <header>
 </header>
-  <div style="position:fixed; width:100vw; top:50%; left:50%; transform:translateX(-50%) translateY(-50%);">
+  <div style="position:fixed; width:100vw; animation:logo 1s 2s linear forwards; top:50%; left:50%; transform:translateX(-50%) translateY(-50%);">
 <svg viewBox="0, 0, 9, 5" xmlns="http://www.w3.org/2000/svg">
 <path stroke-linecap="round" class="path1 pathA patha" d="M2 2 A1 1 0 0 0 2 4 Z" fill="#ffc080"></path>
 <path stroke-linecap="round" class="path2 pathA pathb" d="M2 2 A1 1 0 0 0 3 3 L3 2 Z" fill="#ffc080"></path>
