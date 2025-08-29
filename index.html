@@ -5,7 +5,7 @@
   <title>Ćrix</title>
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
-body{background-image: url("haikei.png");}
+body{animation:sugosugi 1s linear forwards infinite; background-image: url("haikei.png");}
 .path1{stroke-dashoffset:4.9; stroke-width:0.01; stroke-dasharray:4.9;}
 .path2{stroke-dashoffset:3.5; stroke-width:0.01; stroke-dasharray:3.5;}
 .path3{stroke-dashoffset:2.9; stroke-width:0.01; stroke-dasharray:2.9;}
@@ -113,6 +113,26 @@ color:#fff;
   border:1px solid #ffffff;
 }
 }
+    @keyframes sugosugi {
+0% {
+background-position: top;
+}
+20% {
+background-position: bottom;
+}
+40% {
+background-position: center;
+}
+60% {
+background-position: left;
+}
+80% {
+background-position: right;
+}
+100% {
+background-position: top;
+}
+}
 </style>
   </head>
 <body>
@@ -134,7 +154,7 @@ wiki 日記
 </div>
   <div style="position:fixed; height:5vw; bottom:calc(max(33.5vh,calc(50vh - 16.5vw))/2); transform:translateY(50%) translateX(-50%); border-radius:4.5vw; width:46vw; text-align:center; left:50%; padding:2vw; animation:moji 1s 2s linear forwards;">
 </div>
-  <div style="position:fixed; font-family:Noto Sans JP; font-weight:900; font-size:5vw; line-height:5vw; bottom:calc(max(33.5vh,calc(50vh - 16.5vw))/2); transform:translateY(50%) translateX(-50%); border-radius:4.5vw; width:46vw; text-align:center; left:50%; padding:2vw; background-clip: text; background-image: url(haikei.png); color:rgba(0,0,0,0);">
+  <div style="animation:sugosugi 1s linear forwards infinite; position:fixed; font-family:Noto Sans JP; font-weight:900; font-size:5vw; line-height:5vw; bottom:calc(max(33.5vh,calc(50vh - 16.5vw))/2); transform:translateY(50%) translateX(-50%); border-radius:4.5vw; width:46vw; text-align:center; left:50%; padding:2vw; background-clip: text; background-image: url(haikei.png); color:rgba(0,0,0,0);">
 文法 翻訳
 </div>
 </body>
